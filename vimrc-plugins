@@ -2,7 +2,10 @@
 call plug#begin('~/.vim/bundle')
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 Plug 'flazz/vim-colorschemes'
+Plug 'chriskempson/base16-vim'
+Plug 'mhartington/oceanic-next'
 
 "" Clojure support. see: http://www.neo.com/2014/02/25/getting-started-with-clojure-in-vim
 Plug 'tpope/vim-fireplace'

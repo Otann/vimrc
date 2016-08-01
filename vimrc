@@ -6,8 +6,6 @@ set enc=utf-8
 set scroll=5
 set scrolloff=7
 
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -19,7 +17,6 @@ if has('nvim')
 endif
 
 set laststatus=1
-set t_Co=256
 
 let g:agprg="ag --column --smart-case -U"
 
@@ -75,22 +72,28 @@ augroup end
 
 function! s:setGuiOptions()
         syntax on
+        set t_Co=256
         set guioptions=-t " don't show the menu
         set guioptions=+R " show scrollbar
         set hlsearch
         set ch=2          " Make command line two lines high
         set mousehide     " Hide the mouse when typing text
         set guifont=Fira\ Code:h13
-        set background=dark
+        
         let g:solarized_visibility = "low"
         let g:solarized_contrast = "normal"
         let g:solarized_termcolors = 16
         let g:solarized_termtrans = 1
+
+        let g:airline_powerline_fonts = 1
+        let g:airline#extensions#tabline#enabled = 1
+
         " my favourites:
-        " candycode, darkburn, dante, redblack,
-        " ir_black, jellybeans, cthulhian,
-        " darkdesert, darkocean, solarized
-        colorscheme solarized
+        " base16-default-dark, OceanicNext, solarized
+        colorscheme base16-default-dark
+        " let g:airline_theme='oceanicnext'
+
+        set background=dark
 endfunction
 
 call s:setGuiOptions()
