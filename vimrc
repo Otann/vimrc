@@ -1,6 +1,6 @@
 
 source ~/.vim/vimrc-plugins
-"source ~/.vim/vimrc-mappings
+source ~/.vim/vimrc-mappings
 
 set enc=utf-8
 set scroll=5
@@ -55,7 +55,7 @@ set number
 set cursorline
 
 " highlight tabs and trailing spaces
-set list listchars=tab:››,eol:¬,trail:·
+"set list listchars=tab:››,eol:¬,trail:·
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -80,7 +80,7 @@ function! s:setGuiOptions()
         set hlsearch
         set ch=2          " Make command line two lines high
         set mousehide     " Hide the mouse when typing text
-        set guifont=Meslo\ LG\ M\ for\ Powerline:h13
+        set guifont=Fira\ Code:h13
         set background=dark
         let g:solarized_visibility = "low"
         let g:solarized_contrast = "normal"
