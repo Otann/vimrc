@@ -90,7 +90,7 @@ function! s:setGuiOptions()
 
         " my favourites:
         " base16-default-dark, OceanicNext, solarized
-        colorscheme base16-default-dark
+        colorscheme solarized
         " let g:airline_theme='oceanicnext'
 
         set background=dark
